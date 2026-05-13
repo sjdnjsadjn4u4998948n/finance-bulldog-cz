@@ -149,11 +149,14 @@
         .h_bib {
             width: 30px;
             height: 25px;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
             z-index: 1001;
+            background: none;
+            border: none;
+            padding: 0;
         }
 
         .h_bib span {
@@ -252,6 +255,7 @@
             font-size: .9em;
             white-space: nowrap;
             transition: opacity .2s;
+            color: var(--a_cda);
         }
 
         .l_padg li a:hover {
@@ -1099,7 +1103,7 @@ padding: 0!important;
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: bounceGift 2s infinite;
+            animation: b_jloe 2s ease-in-out infinite;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             transition: transform 0.3s;
         }
@@ -1107,22 +1111,10 @@ padding: 0!important;
             transform: scale(1.1);
         }
         .b_nmn {
-
             width: 100px;
             height: auto;
         }
-       
-        @keyframes bounceGift {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            60% {
-                transform: translateY(-10px);
-            }
-        }
+        @keyframes b_jloe { 0%,100%{transform:scale(1)}50%{transform:scale(1.15)} }
 
         .n_fbc {
             background: ;
@@ -1633,10 +1625,9 @@ max-width: 70px;
                 width: 100%;
                 text-align: center;
             }
-              .h_bib{
-             display: none;   
-            }
-        }
+                            .h_bib{display:flex;}
+              header.i_ahk .l_padg{display:none;}
+                      }
         figure{
             margin: 0;
         }
@@ -1938,18 +1929,13 @@ max-width: 70px;
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: bounceGift 2s infinite;
+            animation: b_jloe 2s ease-in-out infinite;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             text-decoration: none;
         }
         .b_nmn {
             width: 75px;
             height: auto;
-        }
-        @keyframes bounceGift {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-20px); }
-            60% { transform: translateY(-10px); }
         }
 
       
@@ -2274,9 +2260,11 @@ max-width: 70px;
         
 
 
-        <ul class="l_padg d_cblj">
-                                </ul>
-
+                <ul class="l_padg d_cblj">
+                            <li><a href="#j_phipa">Zahraniční Casino</a></li>
+                                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+        
         <header class="i_ahk">
             <div class="h_jcp">
                 <div class="o_kjnj">
@@ -2284,8 +2272,15 @@ max-width: 70px;
                             <img src="img/2cbe0e6995388ebd49316941c8b1676a.webp" alt="Zahraniční Casino Bonus bez Vkladu 2026 – 10 Nejlepších Nabídek s Reálnou Hodnotou">
                         </div>
                                     </div>
-                <ul class="l_padg">
-                                                        </ul>
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <ul class="l_padg">
+                                                                                    <li><a href="#j_phipa">Zahraniční Casino</a></li>
+                                                                                                        <li><a href="contact.html">Kontakt</a></li>
+                                            </ul>
+                                        <button class="h_bib" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                                    </div>
             </div>
         </header>
 
@@ -2299,7 +2294,7 @@ max-width: 70px;
                             <strong>David Kovář</strong>
                                     &middot; <span class="d_jkfi">Specialista na platební metody</span>
                                         <div class="e_kcd">
-                <span>Naposledy aktualizováno: 11 května 2026</span>
+                <span>Naposledy aktualizováno: 13 května 2026</span>
                                     &middot; <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
@@ -2316,15 +2311,16 @@ max-width: 70px;
                 <script>!function(){var p=document.currentScript.parentNode,bio=p.querySelector('.d_aakp'),btn=p.querySelector('.c_ggef');if(bio&&btn)btn.addEventListener('click',function(){bio.classList.toggle('n_adj');btn.classList.toggle('k_cjf');btn.querySelector('span').textContent=bio.classList.contains('n_adj')?'Skrýt':'Číst více';});}();</script>
                     </div>
     </div>
-                                                                                                <table class="g_jmhm">
+                                <span id="j_phipa" style="display:block;height:0;overflow:hidden;"></span>
+                                                                                <table class="g_jmhm">
                             <thead>
                                 <tr>
                                     <th>№</th>
                                     <th>Mezinárodní casina</th>
                                     <th>Bonus bez vkladu</th>
-                                    <th>Popis</th>
-                                    <th>Hodnocení</th>
-                                    <th>Akce</th>
+                                    <th>Přehled</th>
+                                    <th>Recenze</th>
+                                    <th>Nabídka</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -2341,15 +2337,15 @@ max-width: 70px;
     </td>
 
     <td class="l_ghnj">
-                    <strong>250% do 75 000 Kč + 350 FS</strong>
+                    <strong>250% až do 75 000 Kč + 350 FS</strong>
             </td>
 
     <td class="b_ddjg">
                     <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Minimální vklad již od 5 €</li>
-<li class="whitespace-normal break-words pl-2">Široká nabídka her od předních vývojářů</li>
-<li class="whitespace-normal break-words pl-2">Rychlé výplaty bez zbytečného čekání</li>
-<li class="whitespace-normal break-words pl-2">Licencované a bezpečné kasino</li>
+<li class="whitespace-normal break-words pl-2">Vklad od 5 € – dostupné pro každého</li>
+<li class="whitespace-normal break-words pl-2">Stovky slotů a živých her</li>
+<li class="whitespace-normal break-words pl-2">Bleskové výplaty výher</li>
+<li class="whitespace-normal break-words pl-2">Plně licencováno a ověřeno</li>
 </ul>
             </td>
 
@@ -2371,22 +2367,21 @@ max-width: 70px;
 
     <td class="a_nggb">
         <div class="k_oabfh">
-                            <img src="img/5c88e480c28b9bfb45b7e05db8adce3e.webp" alt="Stonevegas">
+                            <img src="img/72a938f9b41086b6aeb7f810d6f78335.webp" alt="QuickWin">
                                         <div class="j_gkk">
-                    Stonevegas                </div>
+                    QuickWin                </div>
                                 </div>
     </td>
 
     <td class="l_ghnj">
-                    <strong>100% až 12 500 Kč + 200 FS!</strong>
+                    <strong>100% AŽ DO 12 500 KČ + 200 FS</strong>
             </td>
 
     <td class="b_ddjg">
-                    <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Férové podmínky výběru až 50 000 Kč</li>
-<li class="whitespace-normal break-words pl-2">Prověřená platforma</li>
-<li class="whitespace-normal break-words pl-2">Licence Anjouan</li>
-<li class="whitespace-normal break-words pl-2">Minimální vklad pouze €10</li>
+                    <ul>
+<li>Licence: Curacao (8048/JAZ2020-001)</li>
+<li>Minimální vklad: €10</li>
+<li>Maximální výběr: €7.000/měsíc (€20.000 pro VIP)</li>
 </ul>
             </td>
 
@@ -2394,7 +2389,7 @@ max-width: 70px;
         <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="i_djn">
-                                <a href="/lucky520/stonevegas/"
+                                <a href="/lucky520/quickwin/"
                class="e_jbngi"
                style="--shimmer-delay:0.45s"
                target="_blank" rel="nofollow noopener">
@@ -2415,15 +2410,15 @@ max-width: 70px;
     </td>
 
     <td class="l_ghnj">
-                    <strong>250% až do 75 000 Kč + 350 FS + 1 Bonus Crab</strong>
+                    <strong>250% do 75 000 Kč + 350 FS + 1 Bonus Crab</strong>
             </td>
 
     <td class="b_ddjg">
                     <ul>
-<li>Bonus až 75 000 Kč + 350 FS + Bonus Crab</li>
-<li>Tisíce slotů od světových vývojářů</li>
-<li>Jednoduchá registrace během minuty</li>
-<li>Stabilní a bezpečná platforma</li>
+<li>Rychlá registrace do 2 minut</li>
+<li>Výplata výher do 24 hodin</li>
+<li>Licencováno Ministerstvem financí ČR</li>
+<li>Bezpečné platby — karta, bankovní převod</li>
 </ul>
             </td>
 
@@ -2445,22 +2440,21 @@ max-width: 70px;
 
     <td class="a_nggb">
         <div class="k_oabfh">
-                            <img src="img/72a938f9b41086b6aeb7f810d6f78335.webp" alt="QuickWin">
+                            <img src="img/5c88e480c28b9bfb45b7e05db8adce3e.webp" alt="Stonevegas">
                                         <div class="j_gkk">
-                    QuickWin                </div>
+                    Stonevegas                </div>
                                 </div>
     </td>
 
     <td class="l_ghnj">
-                    <strong>100% AŽ DO 12 500 KČ + 200 FS</strong>
+                    <strong>100% až 12 500 Kč + 200 FS!</strong>
             </td>
 
     <td class="b_ddjg">
-                    <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Ověřená licence Curacao</li>
-<li class="whitespace-normal break-words pl-2">VIP výběry až €20 000</li>
-<li class="whitespace-normal break-words pl-2">Oblíbená platforma s vysokým hodnocením</li>
-<li class="whitespace-normal break-words pl-2">Minimální vklad pouze €10</li>
+                    <ul>
+<li>Licence: Anjouan</li>
+<li>Minimální vklad: €10</li>
+<li>Maximální výběr: 50 000 Kč</li>
 </ul>
             </td>
 
@@ -2468,7 +2462,7 @@ max-width: 70px;
         <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="i_djn">
-                                <a href="/win470/quickwin/"
+                                <a href="/win470/stonevegas/"
                class="e_jbngi"
                style="--shimmer-delay:1.35s"
                target="_blank" rel="nofollow noopener">
@@ -2489,15 +2483,15 @@ max-width: 70px;
     </td>
 
     <td class="l_ghnj">
-                    <strong>400% AŽ 375 000 KČ + 400 FS</strong>
+                    <strong>400% AŽ DO 375 000 KČ + 400 FS</strong>
             </td>
 
     <td class="b_ddjg">
                     <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Rychlé výběry</li>
-<li class="whitespace-normal break-words pl-2">Široká nabídka her</li>
-<li class="whitespace-normal break-words pl-2">Denní bonusy</li>
-<li class="whitespace-normal break-words pl-2">Bezpečné &amp; licencované</li>
+<li class="whitespace-normal break-words pl-2">Rychlý převod peněz</li>
+<li class="whitespace-normal break-words pl-2">Skvělý výběr her</li>
+<li class="whitespace-normal break-words pl-2">Speciální nabídky</li>
+<li class="whitespace-normal break-words pl-2">Licencované kasino</li>
 </ul>
             </td>
 
@@ -2519,6 +2513,117 @@ max-width: 70px;
 
     <td class="a_nggb">
         <div class="k_oabfh">
+                            <img src="img/a9091e5bdc63fde40eeca02c81d06809.webp" alt="SlotLair">
+                                        <div class="j_gkk">
+                    SlotLair                </div>
+                                </div>
+    </td>
+
+    <td class="l_ghnj">
+                    <strong>AŽ 75 000 KČ + 450 FS</strong>
+            </td>
+
+    <td class="b_ddjg">
+                    <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="whitespace-normal break-words pl-2">Okamžité výplaty</li>
+<li class="whitespace-normal break-words pl-2">500+ her</li>
+<li class="whitespace-normal break-words pl-2">Exkluzivní odměny</li>
+<li class="whitespace-normal break-words pl-2">Ověřená licence</li>
+</ul>
+            </td>
+
+    <td class="p_iln">
+        <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
+
+    <td class="i_djn">
+                                <a href="/bonus859/slotlair/"
+               class="e_jbngi"
+               style="--shimmer-delay:2.25s"
+               target="_blank" rel="nofollow noopener">
+               Začít hned            </a>
+            </td>
+</tr>
+
+                                                                    
+                                    <tr class="g_jmhm" >
+    <td class="p_mbcf">7</td>
+
+    <td class="a_nggb">
+        <div class="k_oabfh">
+                            <img src="img/abdbb6bc5785fef7618522f4aeb9e559.webp" alt="Wildsino">
+                                        <div class="j_gkk">
+                    Wildsino                </div>
+                                </div>
+    </td>
+
+    <td class="l_ghnj">
+                    <strong>DO 62 500 Kč ve 3 bonusech + 1 Bonus Crab + 300 FS</strong>
+            </td>
+
+    <td class="b_ddjg">
+                    <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Rychlé výběry</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Obrovský výběr her</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Denní bonusy</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Bezpečné &amp; licencované</li>
+</ul>
+            </td>
+
+    <td class="p_iln">
+        <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
+
+    <td class="i_djn">
+                                <a href="/hot641/wildsino/"
+               class="e_jbngi"
+               style="--shimmer-delay:2.7s"
+               target="_blank" rel="nofollow noopener">
+               Začít hned            </a>
+            </td>
+</tr>
+
+                                                                    
+                                    <tr class="g_jmhm" >
+    <td class="p_mbcf">8</td>
+
+    <td class="a_nggb">
+        <div class="k_oabfh">
+                            <img src="img/1b8d3dfd01c6f9493dd8508fe0e5a0f5.webp" alt="Lolajack">
+                                        <div class="j_gkk">
+                    Lolajack                </div>
+                                </div>
+    </td>
+
+    <td class="l_ghnj">
+                    <strong>400% až do 375 000 Kč + 400 FS</strong>
+            </td>
+
+    <td class="b_ddjg">
+                    <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Okamžité výplaty</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">1000+ her</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Exkluzivní odměny</li>
+<li class="font-claude-response-body whitespace-normal break-words pl-2">Ověřená licence</li>
+</ul>
+            </td>
+
+    <td class="p_iln">
+        <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
+
+    <td class="i_djn">
+                                <a href="/bonus422/lolajack/"
+               class="e_jbngi"
+               style="--shimmer-delay:3.15s"
+               target="_blank" rel="nofollow noopener">
+               Začít hned            </a>
+            </td>
+</tr>
+
+                                                                    
+                                    <tr class="g_jmhm" >
+    <td class="p_mbcf">9</td>
+
+    <td class="a_nggb">
+        <div class="k_oabfh">
                             <img src="img/6edfd9aaa2f1768f49a106c37132767b.webp" alt="SpinAura">
                                         <div class="j_gkk">
                     SpinAura                </div>
@@ -2531,10 +2636,10 @@ max-width: 70px;
 
     <td class="b_ddjg">
                     <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Okamžité výplaty</li>
-<li class="whitespace-normal break-words pl-2">Fantastická nabídka her</li>
-<li class="whitespace-normal break-words pl-2">Exkluzivní kampaně</li>
-<li class="whitespace-normal break-words pl-2">Ověřené kasino</li>
+<li class="whitespace-normal break-words pl-2">Rychlé výběry</li>
+<li class="whitespace-normal break-words pl-2">Stovky slotů</li>
+<li class="whitespace-normal break-words pl-2">Denní bonusy</li>
+<li class="whitespace-normal break-words pl-2">Bezpečné &amp; licencované</li>
 </ul>
             </td>
 
@@ -2542,9 +2647,9 @@ max-width: 70px;
         <span class="a_cfcdb">5/5</span><span class="n_indc"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="i_djn">
-                                <a href="/hot701/spinaura/"
+                                <a href="/play503/spinaura/"
                class="e_jbngi"
-               style="--shimmer-delay:2.25s"
+               style="--shimmer-delay:3.6s"
                target="_blank" rel="nofollow noopener">
                Začít hned            </a>
             </td>
@@ -2559,8 +2664,8 @@ max-width: 70px;
     "@type": "WebPage",
     "name": "Zahraniční Casino Bonus bez Vkladu 2026 – 10 Nejlepších Nabídek s Reálnou Hodnotou",
     "description": "Třicet free spinů zdarma, žádný vklad, žádné riziko — zní to skvěle. Jenže čeští hráči, kteří se do těchto nabídek pustí bez přípravy, zjistí, že z oněch 30 free spinů při sázce 5 Kč",
-    "datePublished": "2026-05-11",
-    "dateModified": "2026-05-11",
+    "datePublished": "2026-05-13",
+    "dateModified": "2026-05-13",
     "author": {
         "@type": "Person",
         "name": "David Kovář"
@@ -2568,7 +2673,7 @@ max-width: 70px;
     "mainEntity": {
         "@type": "ItemList",
         "itemListOrder": "https:\/\/schema.org\/ItemListOrderDescending",
-        "numberOfItems": 6,
+        "numberOfItems": 9,
         "itemListElement": [
             {
                 "@type": "ListItem",
@@ -2576,7 +2681,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Casea",
-                    "description": "250% až 75 000 Kč + 350 FS"
+                    "description": "250% do 75 000 Kč + 350 FS"
                 }
             },
             {
@@ -2584,8 +2689,8 @@ max-width: 70px;
                 "position": 2,
                 "item": {
                     "@type": "Organization",
-                    "name": "Stonevegas",
-                    "description": "100% až do 12 500 Kč + 200 FS"
+                    "name": "QuickWin",
+                    "description": "100% bonus do 12 500 Kč a 200 free spinů!"
                 }
             },
             {
@@ -2594,7 +2699,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "AlterSpin",
-                    "description": "250% až do 75 000 Kč + 350 FS + 1 Bonus Crab"
+                    "description": "250% až 75 000 Kč + 350 FS + 1 Bonus Crab"
                 }
             },
             {
@@ -2602,8 +2707,8 @@ max-width: 70px;
                 "position": 4,
                 "item": {
                     "@type": "Organization",
-                    "name": "QuickWin",
-                    "description": "100% AŽ DO 12 500 KČ + 200 FS"
+                    "name": "Stonevegas",
+                    "description": "12 500 Kč + 200 točení navíc!"
                 }
             },
             {
@@ -2612,7 +2717,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Spinboss",
-                    "description": "400% AŽ 375 000 KČ + 400 FS"
+                    "description": "400% AŽ DO 375 000 KČ + 400 FS"
                 }
             },
             {
@@ -2620,8 +2725,35 @@ max-width: 70px;
                 "position": 6,
                 "item": {
                     "@type": "Organization",
+                    "name": "SlotLair",
+                    "description": "AŽ DO 75 000 KČ + 450 FS"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                    "@type": "Organization",
+                    "name": "Wildsino",
+                    "description": "Až 62 500 Kč ve 3 bonusech + 1 Bonus Crab + 300 Free Spiny"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                    "@type": "Organization",
+                    "name": "Lolajack",
+                    "description": "400% až 375 000 Kč + 400 FS"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                    "@type": "Organization",
                     "name": "SpinAura",
-                    "description": "100% AŽ 50 000 CZK + 200 FS"
+                    "description": "100% DO 50 000 CZK + 200 FS"
                 }
             }
         ]
@@ -2629,6 +2761,7 @@ max-width: 70px;
 }</script>
 
                                     
+                    <span id="a_ilbc" style="display:block;height:0;overflow:hidden;"></span>
                                             
                             <ul class="k_boic">
                                                                     <li class="a_gfb"><a href="#Srovnání_zahraničních_kasin_s_bonusem_bez_vkladu_2026">Srovnání zahraničních kasin s bonusem bez vkladu 2026</a></li>
@@ -2951,7 +3084,7 @@ max-width: 70px;
                 <div class="p_pkoka">
                     <div class="g_ffk">
                                                     <img src="img/2cbe0e6995388ebd49316941c8b1676a.webp" alt="Logo" style="max-width: 280px; margin-bottom: 15px;    max-height: 150px;">
-                                                <p></p>
+                                                <p>Zodpovědné hraní je základ. Hazardní hry jsou určeny pouze pro osoby starší 18 let. Hrajte s rozumem, stanovte si limity a nikdy nesázejte více, než si můžete dovolit prohrát. Pokud máte problém s hazardními hrami, vyhledejte odbornou pomoc.</p>
                                             </div>
                     <div class="g_ffk">
                         <ul class="m_lhl">
@@ -3048,8 +3181,8 @@ max-width: 70px;
                             </div>
         </footer>
 
-                                        <a href="/game617/casea/" class="p_kaj">
-                <img src="img/36143a37f36f323fc5d27bdfd9c0b439.gif" class="b_nmn" alt="Zahraniční Casino Bonus bez Vkladu 2026 – 10 Nejlepších Nabídek s Reálnou Hodnotou">
+                            <a href="/amazing419/casea/" class="p_kaj">
+                <img src="img/233f4fa4fdae67797f927de673a12a77.webp" class="b_nmn" alt="Zahraniční Casino Bonus bez Vkladu 2026 – 10 Nejlepších Nabídek s Reálnou Hodnotou">
             </a>
         
 
